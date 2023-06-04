@@ -1,0 +1,136 @@
+* {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: normal;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 250px 25px 0 25px;
+  background: linear-gradient(to right, #9acac8, #dac2c2);
+  overflow: hidden;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  line-height: 2.5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: -16px;
+  padding-bottom: 16px;
+}
+
+input::placeholder {
+  white-space: pre-wrap;
+  text-align: center;
+  color: #acacff;
+}
+
+.login-container {
+  width: 400px;
+  height: 500px;
+  min-width: 300px;
+  min-height: 400px;
+
+  padding: 52px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-top: 0;
+  color: #6363bf;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #4caf50;
+  font-size: larger;
+  margin: 25px 0 0 0;
+  padding: 11px 43px 11px 34px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+#password {
+  padding-right: 40px;
+}
+
+#toggle-password-visibility {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+
+.custom-alert {
+  box-shadow: 0 16px 70px rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+button:focus {
+  outline: none;
+}
